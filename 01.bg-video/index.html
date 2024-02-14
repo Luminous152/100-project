@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Video</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <style>
+        .content h1:hover {
+            -webkit-text-stroke: 2px white;
+            color: transparent;
+        };
+        @media (min-aspect-ratio : 16/9) {
+            .back-video{
+                width: 100%;
+                height: auto;
+            }
+        };
+        @media (max-aspect-ratio : 16/9) {
+            .back-video{
+                width: auto;
+                height: 100%;
+            }
+        }
+    </style>
+    
+</head>
+<body class="p-0 m-0 box-border font-serif ">
+   <section class="hero w-[100%] min-h-screen bg-gradient-to-r from-neutral-300 to-stone-400 relative px-0 py-[5%] flex justify-center items-center ">
+        <video autoplay loop muted plays-inline class="back-video absolute right-0 left-0 z-0" >
+            <source src="./assets/production_id_4763824 (2160p).mp4"> 
+        </video>
+
+        <section class="content z-50 text-center ">
+            <h1 class="text-4xl md:text-[150px] lg:text-[200px] font-bold text-slate-100 transition duration-200">Journey</h1>
+            <a href="#" class="text-[15px] md:text-[25px] lg:text-[50px] inline-block text-slate-100  border-2 border-white px-4 py-2 rounded-3xl mt-2 md:mt-11 lg:mt-16 hover:bg-white  hover:text-slate-800">Explore</a>
+
+        </section>
+
+   </section>
+</body>
+</html>
